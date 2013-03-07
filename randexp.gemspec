@@ -5,8 +5,8 @@ require "randexp/version"
 Gem::Specification.new do |s|
   s.name        = "randexp"
   s.version     = Randexp::VERSION
-  s.authors     = ["Ben Burkert"]
-  s.email       = ["ben@benburkert.com"]
+  s.authors     = ["Ben Burkert, fork by Anders Åslund"]
+  s.email       = ["ben@benburkert.com, anders.aslund@me.com"]
   s.homepage    = "http://github.com/benburkert/randexp"
   s.summary     = %q{Library for generating random strings.}
   s.description = %q{Library for generating random strings from regular expressions.}
