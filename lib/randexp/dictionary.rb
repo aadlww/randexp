@@ -1,6 +1,9 @@
 class Randexp::Dictionary
   def self.load_dictionary
-    if File.exists?("/usr/share/dict/words")
+    dir = File.dirname(__FILE__)
+    if File.exists?("#{dir}/../../../wordlists/web2")
+      File.read("#{dir}/../../../wordlists/web2").split
+    elseif File.exists?("/usr/share/dict/words")
       File.read("/usr/share/dict/words").split
     elsif File.exists?("/usr/dict/words")
       File.read("/usr/dict/words").split
