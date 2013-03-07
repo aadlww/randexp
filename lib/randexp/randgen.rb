@@ -75,4 +75,16 @@ class Randgen
     else          /(\d{3}-)?\d{3}-\d{4}/.gen
     end
   end
+
+  def self.country(options = {})
+    Countries.countries(options).pick
+  end
+
+  def self.month(options = {})
+    RealName.months(options).pick
+  end
+
+  def self.nerdword(options = {})
+    RealName.nerdwords(options).pick
+  end
 end
