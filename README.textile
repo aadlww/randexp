@@ -1,6 +1,7 @@
 h1. randexp
 
 bq. by Ben Burkert
+bq. forked by Anders Åslund to make windows support
 
 h2. DESCRIPTION:
 
@@ -9,10 +10,21 @@ randexp makes it easy to generate random string from most regular expressions.
 h2. REQUIREMENTS:
  
 * none!
+edit:
+   now it has no requirements and supports Windows
  
 h2. INSTALL:
- 
+
+for 1.1.7:
   $ sudo gem install randexp
+
+for this forked version:
+   Build and install:
+   gem build randexp.gemspec
+   gem install randexp-0.1.8.gem
+
+   Let bundler doit for you:
+   add it to your gemfile gem 'randexp', :git => "https://github.com/aadlww/randexp.git"
 
 h2. USAGE:
 
@@ -168,9 +180,20 @@ Random name, with a specific gender:
 </code>
 </pre>
 
+More self explanatory versions:
+/[:country:]/.gen
+/[:nerd_word:]/.gen
+/[:month:]/.gen
+/[:first_name:]/.gen
+/[:last_name:]/.gen
+/[:phone_number:]/.gen
+/[:sentence:]/.gen
+/[:paragraph:]/.gen
+/[:email:]/.gen
 
 h4. Contributors
 
 * Matt Aimonetti (mattetti)
 * Gerrit Kaiser (gerrit)
 * Mike Vincent (shame)
+* Anders Åslund (aadlww)
