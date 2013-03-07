@@ -10,21 +10,26 @@ randexp makes it easy to generate random string from most regular expressions.
 h2. REQUIREMENTS:
  
 * none!
-edit:
-   now it has no requirements and supports Windows
+* edit: now it has no requirements and supports Windows
  
 h2. INSTALL:
 
-for 1.1.7:
+For 1.1.7:
   $ sudo gem install randexp
 
-for this forked version:
-   Build and install:
-   gem build randexp.gemspec
-   gem install randexp-0.1.8.gem
+For this forked version:
+Build and install:
 
-   Let bundler doit for you:
-   add it to your gemfile gem 'randexp', :git => "https://github.com/aadlww/randexp.git"
+  $ gem build randexp.gemspec
+  $ gem install randexp-0.1.8.gem
+
+...or add it to your gemfile to makebundler doit for you:
+ 
+<pre>
+<code>
+   gem 'randexp', :git => "https://github.com/aadlww/randexp.git"
+</code>
+</pre>
 
 h2. USAGE:
 
