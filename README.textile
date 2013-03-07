@@ -15,13 +15,21 @@ h2. REQUIREMENTS:
 h2. INSTALL:
 
 For 1.1.7:
+<pre>
+<code>
   $ sudo gem install randexp
+</code>
+</pre>
 
 For this forked version:
-Build and install:
-
+<pre>
+<code>
+  $ git clone https://github.com/aadlww/randexp.git
+  $ cd randexp
   $ gem build randexp.gemspec
   $ gem install randexp-0.1.8.gem
+</code>
+</pre>
 
 ...or add it to your gemfile to makebundler doit for you:
  
