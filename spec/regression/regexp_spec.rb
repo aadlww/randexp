@@ -188,4 +188,17 @@ describe "#{'*' * 80}\nRegression Specs:" do
   it "/[:first_name:]{5,10}/          => /\\w{5,10}/" do
     /[:first_name:]{5,10}/.gen.should =~ /\w{5,10}/
   end
+
+    it "/[:nerd_word:]{5,10}/          => /\\w{5,10}/" do
+    /[:nerd_word:]{5,10}/.gen.should =~ /\w{5,10}/
+  end
+
+  it "/[:country:]{5,10}/          => /\\w{5,10}/" do
+    /[:country:]{5,10}/.gen.should =~ /\w{5,10}/
+  end
+
+  it "/[:month:]{5,10}/          => /\\w{5,10}/" do
+    /[:month:]{5,10}/.gen.should =~ /\w{5,10}/
+  end
+
 end

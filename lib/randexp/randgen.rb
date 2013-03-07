@@ -77,14 +77,14 @@ class Randgen
   end
 
   def self.country(options = {})
-    Countries.countries(options).pick
+    RealName.countries(options).pick
   end
 
   def self.month(options = {})
     RealName.months(options).pick
   end
 
-  def self.nerdword(options = {})
-    RealName.nerdwords(options).pick
+  def self.nerd_word(options = {})
+    RealName.nerd_words(options).pick
   end
 end
