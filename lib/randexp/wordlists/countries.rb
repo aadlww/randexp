@@ -2,7 +2,7 @@ class RealName
   def self.load_countries
     dir = File.dirname(__FILE__)
     if File.exists?("#{dir}/../../../wordlists/countries")
-      File.read("#{dir}/../../../wordlists/countries").split
+      File.read("#{dir}/../../../wordlists/countries").split("\n")
     else
       raise "countries file not found"
     end
