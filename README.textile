@@ -1,7 +1,7 @@
 h1. randexp
 
 bq. by Ben Burkert
-bq. forked by Anders Åslund to make windows support
+forked by Anders Åslund to make windows support
 
 h2. DESCRIPTION:
 
